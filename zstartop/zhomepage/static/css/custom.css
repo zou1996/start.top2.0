@@ -17,6 +17,12 @@
     padding-left: 40px;
     padding-right: 40px; */
 }
+.ui.inverted.circular.button {
+    position: absolute;
+    top: 10%;
+    left: 92%;
+    transform: translate(-50%,-50%);
+}
 
 .ui.inverted.center.aligned.header.slogan {
     font-size: 50px;

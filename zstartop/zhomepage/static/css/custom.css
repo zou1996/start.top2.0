@@ -1,0 +1,131 @@
+.ui.circular.inverted.segment.people-zhh {
+  /* background: url({% static 'images/myphoto.jpeg' %}); */
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+}
+.ui.circular.inverted.segment.pepple-yyy {
+  /* background: url({% static 'images/photoyyy.jpeg'%});
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.ui.vertical.basic.segment.masthead {
+    /* height: 700px;
+    background: url('images/blogbanner.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    padding-right: 40px; */
+}
+
+.ui.inverted.center.aligned.header.slogan {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ui.red.circular.button {
+    width: 220px;
+}
+
+.ui.header.logo {
+    font-size: 30px;
+    color: rgb(196, 196, 196);
+}
+
+.ui.inverted.segment.card-view {
+    height: 220px;
+
+}
+
+.ui.vertical.basic.segment.recommended > .ui.center.aligned.header {
+    font-size: 40px;
+    color: rgb(56, 56, 56);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ui.header.title {
+    margin-bottom: 100px;
+}
+.ui.vertical.basic.segment.recommended {
+    margin-bottom: 150px;
+}
+
+.ui.inverted.red.circular.button.foryyy {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+}
+
+.ui.inverted.basic.segment.people-say {
+    height: 450px;
+
+    /* background: black; */
+
+    background: black;
+
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    /* position: relative; */
+    margin-bottom: 200px;
+
+}
+
+.four.wide.column {
+    position: relative;
+}
+
+.ui.circular.inverted.segment.people-photo {
+    background: ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.ui.inverted.basic.segment.people-say > .ui.center.aligned.header {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.ui.inverted.basic.segment.people-say > .ui.grid {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.ui.circular.inverted.segment > .ui.inverted.header {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+
+}
+
+.icon.red.inverted.circular.star {
+    position: absolute;
+    transform: translate(-100%,-100%);
+    left: 100%;
+    top: 100%;
+}
+
+
+.ui.inverted.red.circular.button.forzhh {
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: white;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>zstart.top.blog</title>
+        <link rel="stylesheet" href="{% static 'css/semantic.css' %}"  media="screen" title="no title" charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
+
+
+        <style type="text/css">
+            h1 {
+                font-family:'Oswald', sans-serif!important;
+                font-size:40px;
+            }
+
+            body {
+                font-family: 'Raleway', sans-serif;
+            }
+            p {
+                font-family: 'Raleway', sans-serif;
+                font-size:18px;
+            }
+            .ui.vertical.segment.masthead {
+                height: 300px;
+                background-image: url({% static 'images/blog.jpeg' %});
+                background-size: cover;
+                background-position: 100% 80%;
+            }
+
+            .ui.container.segment {
+                width: 800px;
+            }
+
+            .ui.center.aligned.header.blogslogon {
+                margin-top: 40px;
+            }
+
+            .ui.center.aligned.header.blogslogon p {
+                margin-top: 10px;
+                color: white;
+                font-size: 10px;
+            }
+            .ui.container.nav {
+                width: 500px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="ui inverted vertical  segment masthead">
+
+            <h1 class="ui center aligned header blogslogon" style="font-size:50px;font-family: 'Raleway', sans-serif!important;">
+                zstart.top.blog
+                <p class="ui sub header" style="font-size:18px">
+                    星星罩我去战斗
+                </p>
+
+            </h1>
+        </div>
+        <div class="ui container nav">
+            <div class="ui borderless text three item menu ">
+                <div class="ui simple dropdown  item">
+                    Coding Life
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="?tag=scrapy">scrapy</a>
+                        <a class="item" href="?tag=django">django</a>
+                    </div>
+                </div>
+                <div class="ui simple dropdown  item">
+                    Enjoy Life
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="?tag=hangzhou">hangzhou</a>
+                        <a class="item" href="?tag=wenzhou">wenzhou</a>
+                    </div>
+                </div>
+                <a class="item" href="?">
+                    All Articles
+                </a>
+                <a class="item" href="msgboard">
+                    留言板
+                </a>
+
+            </div>
+        </div>
+
+        <div class="ui divider"></div>
+
+        <div class="ui  vertical segment">
+          {% for article in article_list %}
+            <div class="ui container vertical segment">
+                <a href="{% url 'detail' article.id %}">
+                    <h1 class="ui header">
+                        {{ article.headline }}
+                    </h1>
+                </a>
+
+                <i class="icon grey small unhide">10,000</i>
+                <p>
+                  {{ article.content|truncatewords:"40" }}
+                    <a href="{% url 'detail' article.id %}">
+                        <i class="angle tiny double grey right icon">READMORE</i>
+                    </a>
+                </p>
+
+                <div class="ui mini  tag label">
+                    {{ article.tag }}
+                </div>
+            </div>
+            {% endfor %}
+
+            <!-- <div class="ui container vertical segment">
+                <a href="#">
+                    <h1 class="ui header">
+                        {{ article.headline }}
+                    </h1>
+                </a>
+
+                <i class="icon grey small unhide">10,000</i>
+                <p>
+                  {{ article.content }}
+                    <a href="#">
+                        <i class="angle tiny double grey right icon">READMORE</i>
+                    </a>
+                </p>
+
+                <div class="ui mini  tag label">
+                    life
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="ui inverted  vertical very padded  segment">
+          <a href="">
+            星星罩我去战斗®
+          </a>
+        </div>
+    </body>
+</html>
